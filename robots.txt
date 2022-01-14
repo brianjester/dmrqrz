@@ -1,10 +1,2 @@
 User-agent: * 
 Allow: /index.html
-Allow: /anytone/index.html
-Allow: /okinawa-castles/index.html
-Allow: /passive-income/index.html
-Allow: /morse/index.html
-Allow: /qrz/index.html
-Allow: /fun-filipino-words-and-culture/index.html
-
-Disallow: /peanut/
