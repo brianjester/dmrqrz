@@ -71,7 +71,8 @@
           <BR><BR>
             <p id="results1"></p>
             <p class="text-center" id="flagPic1"></p>
-            <p class="text-center" id="profilePic1"></p>
+            <p class="text-center" id="profilePic1"></p><BR>
+            <p class="text-center" id="yt"></p>
           </div>
 
           </main>
@@ -184,7 +185,8 @@
               document.getElementById("flagPic1").innerHTML = `${flagHtml}`;
               document.getElementById("profilePic1").innerHTML = `${thumbnailPicHtml}`;
             }
-
+            // Add yt
+            document.getElementById("yt").innerHTML = "<div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/"+randomYt()+"?rel=0\" allowfullscreen></iframe></div>";
           } // end of verify input is sanitized
           else {
             document.getElementById("inputText").style.borderColor = "red";
@@ -206,7 +208,13 @@
     }
 
     function randomDmrId() {
-      const mccs = [3102,3131,3104,3132,3105,3133,3106,3107,3134,3108,3135,3109,3136,3110,3137,3111,3138,3112,3139,3113,3140,3115,3141,3116,3142,3117,3144,3118,3145,3119,3146,3120,3147,3121,3148,3122,3149,3123,3150,3124,3151,3125,3153,3126,3154,3127,3155,3128,3156,3129,2141,2142,2143,2144,2145,2146,2147,2148,2149,2621,2622,2623,2624,2625,2626,2627,2628,2629,2341,2351,2345,2355,2343,2353,2346,2356,2344,2354,2347,3020,3025,3021,3026,3022,3027,3023,3028,3024,3029,2041,2042,2043,2044,2045,2046,2047,2048,2061,2062,2063,2064,2065,2066,2067,2068,2069,2221,2222,2223,2224,2225,2226,2227,2228,2229,2021,2022,2023,2024,2025,2026,2027,2028,2029,2321,2322,2323,2324,2325,2326,2327,2328,2329];      return mccs[Math.floor(Math.random()*mccs.length)];
+      const mccs = [3102,3131,3104,3132,3105,3133,3106,3107,3134,3108,3135,3109,3136,3110,3137,3111,3138,3112,3139,3113,3140,3115,3141,3116,3142,3117,3144,3118,3145,3119,3146,3120,3147,3121,3148,3122,3149,3123,3150,3124,3151,3125,3153,3126,3154,3127,3155,3128,3156,3129,2141,2142,2143,2144,2145,2146,2147,2148,2149,2621,2622,2623,2624,2625,2626,2627,2628,2629,2341,2351,2345,2355,2343,2353,2346,2356,2344,2354,2347,3020,3025,3021,3026,3022,3027,3023,3028,3024,3029,2041,2042,2043,2044,2045,2046,2047,2048,2061,2062,2063,2064,2065,2066,2067,2068,2069,2221,2222,2223,2224,2225,2226,2227,2228,2229,2021,2022,2023,2024,2025,2026,2027,2028,2029,2321,2322,2323,2324,2325,2326,2327,2328,2329];      
+      return mccs[Math.floor(Math.random()*mccs.length)];
+    }    
+    
+    function randomYt() {
+      const yt = ["M6C__XgVDyo" ,"u6HJKhgkWow" ,"cos_-lwlyPE" ,"b9Ovcwurpdg" ,"6zP1JAhVphQ" ,"78GRgzyoRB8" ,"qX5JkmuCxIk" ,"0ciWNT3hQL0" ,"Zbt6bbnDsDE" ,"YSPzDESGyb4" ,"wXeQa7t5hTE" ,"cxH-jVHL8g0" ,"SaJcUx5HSJ4" ,"bnF6INMdT1M" ,"XXOZvwxmUg4" ,"snq0QDxvd94" ,"mxMd9JsrbEc" ,"MfPmNq34WLk" ,"cO4jFQx7ey8" ,"-V7yvfG0kAI" ,"PtIOelbbRyI" ,"QwWc4-h8yLY" ,"16gkn8joVCw" ,"HTy5rngo3Gs" ,"bYGKlfGOZTE" ,"VXlHinRW-EQ" ,"kfivfUKP-8M" ,"DUVWZ53BbM4" ,"B40YqFMqhPU" ,"b7vm1cfMjKg" ,"pc72nd1mzfs" ,"1uo8TAzxIH8" ,"n34AJvBVLYo" ,"XnAYUHh1GYs" ,"ci4BlOTEn0I" ,"aAd5XOOllWQ" ,"stOqyaHP1-0" ,"97m9UrSnT5A" ,"IbN72V9r9rM" ,"Xw6prs2NoaY" ,"l-MybTYnEPo" ,"2P1_DyypRU0" ,"wtm6-R_ouoQ" ,"X4E9XjDSUt4" ,"_GN__Ny8_6c" ,"694NK0W9M24" ,"dcjvl6f939U" ,"UdVN8sim8tk" ,"bQ18lPgScRs" ,"RAJDRG16BVc" ,"wE0FI7EW_x0" ,"DLS4KDWJmEo" ,"FJVnt6uL77Q" ,"pNVKCgXRYo8" ,"uteuDUsQ1Co" ,"9y9T-6jrtCY" ,"zb_f-QOV8KY" ,"bYn-Hsb0FKY" ,"mMFSSwLQw6o" ,"rNLCZCZSgyk" ,"rYrUnmtbbPE" ,"X3tbo7UxP2E" ,"ia9mohEC-Ag" ,"kWQqx-z9S-c" ,"_tzAgNVJkc8" ,"g4EVfLtYM0M" ,"Cckwy9hbDUs" ,"OjFWPkbbcRc" ,"KtKsFTHepIA" ,"Ohhrxfg5hXA" ,"nEy7jNu8wMc" ,"i0JDeIQWoE4" ,"B-bB3Jnh0qQ" ,"u_cTSjnJd-E" ,"fl-r94IcRE4" ,"jnpX8FRE5I8" ];      
+      return yt[Math.floor(Math.random()*yt.length)];
     }
     </script>
 
